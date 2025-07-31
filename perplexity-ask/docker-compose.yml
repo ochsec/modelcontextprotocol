@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  perplexity-mcp:
+    build: .
+    environment:
+      - PERPLEXITY_API_KEY=${PERPLEXITY_API_KEY}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

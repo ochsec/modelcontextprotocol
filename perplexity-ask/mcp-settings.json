@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "perplexity-ask": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--env",
+        "PERPLEXITY_API_KEY=your-api-key-here",
+        "perplexity-mcp"
+      ],
+      "env": {}
+    }
+  }
+}
